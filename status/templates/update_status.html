@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .login-title{
+            background-color: rgb(150, 150, 150);
+            margin-left: 50px;
+            width: 67.75%;
+        }
+        form{
+            background-color: rgb(200, 200, 200);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 23.75%;
+            margin-left: 500px;
+            
+        }
+        .cadastro{
+            background-color: rgb(200, 200, 200);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: fixed;
+            top: 30%;
+            width: 23.75%;
+        }
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Update</title>
+</head>
+<body>
+    <form action="{% url 'submit_update_status' status.id %}" method="POST"> {% csrf_token %}
+        <h1>Atualizar Status</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" value="{{ status.nome }}">
+        <br><br>
+        <label for="peso">Peso:</label>
+        <input type="text" name="peso" value="{{ status.peso }}">
+        <br><br>
+        <label for="altura">Altura:</label>
+        <input type="text" name="altura" value="{{ status.altura }}">
+        <br><br>
+        <button class="submit">Confirmar</button>
+    </form>
+</body>
+</html>
