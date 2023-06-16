@@ -1,5 +1,5 @@
-# Um projeto que é realizado cadastro de usuário, onde o usuário logado pode escrever seus dados e receber um resultado de informações de acordo com os seus dados.
+# Calculo-imc
 
-# Frameworks e bibliotecas utilizados:
+## Um projeto que é realizado cadastro de usuário, onde o usuário logado pode escrever seus dados e receber um resultado de informações de acordo com os seus dados.
 
-## Django
+## Frameworks e bibliotecas utilizados: Django
